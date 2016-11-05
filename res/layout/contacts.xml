@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <EditText
+            android:inputType="none"
+            android:id="@+id/PutName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Name"
+            android:ems="10" 
+            android:background="@null">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/PutPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/MobilePhone"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/MobilePhone"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <EditText
+            android:inputType="none"
+            android:id="@+id/PutCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/PutName"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Company"
+            android:ems="10" />
+
+        <EditText
+            android:inputType="none"
+            android:id="@+id/PutDuty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Duty"
+            android:layout_alignBottom="@+id/Duty"
+            android:layout_alignLeft="@+id/PutCompany"
+            android:layout_alignParentRight="true"
+            android:ems="10" />
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/PutEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Email"
+            android:layout_toRightOf="@+id/Email"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/MobilePhone"
+            android:layout_alignParentLeft="true"
+            android:text="@+string/ContactName"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/More"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/PutEmail"
+            android:layout_marginTop="16dp"
+            android:text="@+string/ContactMoreInfo"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <TextView
+            android:id="@+id/MobilePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/PutName"
+            android:layout_marginTop="16dp"
+            android:text="@+string/ContactPhone"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MobilePhone"
+            android:layout_marginTop="17dp"
+            android:layout_toLeftOf="@+id/PutCompany"
+            android:text="@+string/ContactCompany"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PutCompany"
+            android:layout_marginTop="14dp"
+            android:layout_toLeftOf="@+id/PutDuty"
+            android:text="@+string/ContactDuty"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/PutDuty"
+            android:layout_marginTop="17dp"
+            android:text="@+string/ContactEmail"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

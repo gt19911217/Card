@@ -28,6 +28,10 @@
        <activity
             android:name=".user.User">
        </activity>
+       
+       <activity
+           android:name=".tools.Contacts">
+       </activity>activity>
     </application>
 
 </manifest>

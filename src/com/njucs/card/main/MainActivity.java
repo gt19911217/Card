@@ -4,6 +4,7 @@ import com.njucs.card.R;
 import com.njucs.card.initializtion.GetRecentCard;
 import com.njucs.card.recognition.Recognition;
 import com.njucs.card.tools.BaseActivity;
+import com.njucs.card.tools.Contacts;
 import com.njucs.card.user.User;
 
 import java.io.*;
@@ -93,6 +94,9 @@ public class MainActivity extends BaseActivity implements OnTouchListener{
 					Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));
 //					picture.setImageBitmap(bitmap);
 					Recognition.Handle(bitmap);
+					/*Log.i("String", "Outside!");
+					Contacts c=new Contacts("");
+					c.action(MainActivity.this);*/
 				} catch (FileNotFoundException e) {
 					e.printStackTrace();
 				}

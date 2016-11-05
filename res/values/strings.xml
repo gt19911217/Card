@@ -8,6 +8,13 @@
     <string name="About">关于</string>
     <string name="Setting">设置</string>
     <string name="...">……</string>
+    <string name="ContactName">姓名</string>
+    <string name="ContactEmail">邮箱</string>
+    <string name="ContactCompany">公司</string>
+    <string name="ContactAddress">地址</string>
+    <string name="ContactDuty">职务</string>
+    <string name="ContactPhone">个人电话</string>
+    <string name="ContactMoreInfo">显示更多</string>
     
 
 </resources>
